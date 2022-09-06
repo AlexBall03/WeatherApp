@@ -1,4 +1,4 @@
-function Main({ Temp, Desc, FeelsLike }) {
+function Main({ Temp, Desc, Icon }) {
     return (
         <main className="Main">
             <div className="temp_Container">
@@ -7,6 +7,7 @@ function Main({ Temp, Desc, FeelsLike }) {
 
             <div className="desc_Container">
                 <p>{Desc}</p>
+                <img src={Icon} alt="current weather icon" />
             </div>
         </main>       
     );

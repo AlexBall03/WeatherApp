@@ -13,10 +13,11 @@ function App() {
   const Title = "Local Weather";
   const Location = "Phoenix"
   const Temp = "102°F";
+  const Desc = "Sunny";
+  const Icon = "Sunny Icon";
   const minTemp = "90°F";
   const maxTemp = "105°F";
   const FeelsLike = "108°F";
-  const Desc = "Cloudy";
   const Humidity = "20%";
   const DewPoint = "60°";
   const WindSpeed = "3 MPH";
@@ -34,7 +35,8 @@ function App() {
       <section className="main_Section">
        <Main 
         Temp={Temp} 
-        Desc={Desc} 
+        Desc={Desc}
+        Icon={Icon} 
       />
       </section>
 
