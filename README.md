@@ -1,3 +1,14 @@
+# Weather App
+### Here you can view the weather data from any specified location you type into the searchbar!
+
+Chech out my portfolio at: https://alexballportfolio.dev/
+
+<br />
+
+---
+---
+
+<br />
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
