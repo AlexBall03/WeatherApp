@@ -1,17 +1,13 @@
-import axios from "axios";
-import { useState } from "react";
 import './App.css';
 import Header from "./Components/Header";
+import SearchBar from "./Components/SearchBar";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 
 function App() {
-  // API Call
-  // const URL = `https://api.openweathermap.org/data/2.5/weather?q=phoenix&appid=${process.env.REACT_APP_API_KEY}`;
-
   // Info
   const Title = "Local Weather";
-  const Location = "Phoenix"
+  const Location = "Phoenix";
   const Temp = "102°F";
   const Desc = "Sunny";
   const Icon = "Sunny Icon";
@@ -30,6 +26,10 @@ function App() {
           Title={Title} 
           Location={Location} 
         />
+      </section>
+
+      <section className="searchbar_Section">
+        <SearchBar />
       </section>
 
       <section className="main_Section">

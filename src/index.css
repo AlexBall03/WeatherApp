@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Code+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Color Scheme */
+:root {
+    --text-clr: #c6c2bb;
+    --Bg-Overlay-clr: rgba(0, 0, 0, 0.508);
+}

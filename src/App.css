@@ -1,6 +1,32 @@
+/* App */
 .App {
-    width: 1200px;
-    max-width: 90%;
     text-align: center;
-    margin: 0 auto;
+}
+
+
+/* Background */
+body {
+    background-image: url("./Assets/WeatherApp_Background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--Bg-Overlay-clr);
+    background-blend-mode: overlay;
+    height: 100vh;
+    color: var(--text-clr);
+}
+
+
+/* Text */
+p {
+    font-size: 1.3rem;
+}
+
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+}
+h2,h3 {
+    font-size: 2rem;
 }
