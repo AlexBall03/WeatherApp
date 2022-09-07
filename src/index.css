@@ -10,6 +10,7 @@
 
 /* Color Scheme */
 :root {
-    --text-clr: #c6c2bb;
-    --Bg-Overlay-clr: rgba(0, 0, 0, 0.508);
+    --Text-clr: #c6c2bb;
+    --Background-clr: rgba(0, 0, 0, 0.393);
+    --Background-Overlay-clr: rgba(0, 0, 0, 0.508);
 }

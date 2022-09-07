@@ -1,56 +1,59 @@
 import './App.css';
-import Header from "./Components/Header";
-import SearchBar from "./Components/SearchBar";
-import Main from "./Components/Main";
-import Footer from "./Components/Footer";
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Main from './Components/Main/Main';
 
 function App() {
   // Info
   const Title = "Local Weather";
   const Location = "Phoenix";
   const Temp = "102°F";
+  const lowTemp = "89°F";
+  const highTemp = "109°F";
   const Desc = "Sunny";
   const Icon = "Sunny Icon";
-  const minTemp = "90°F";
-  const maxTemp = "105°F";
+
   const FeelsLike = "108°F";
+  const UV = "0";
   const Humidity = "20%";
   const DewPoint = "60°";
-  const WindSpeed = "3 MPH";
-  const WindGusts = "4 MPH";
-  
+  const Wind = "3 MPH";
+  const Gusts = "4 MPH";
+  const AirQuality = "46";
+  const Visibility = "7 mi";
+  const Sunrise = "6:04 PM";
+  const Sunset = "6:46 PM";
+  const Developer = "</Alex-Ball\\>";
+
   return (
     <div className="App">
-      <section className="header_Section">
-        <Header 
-          Title={Title} 
-          Location={Location} 
-        />
-      </section>
+      {/* Header Component */}
+      <Header Title={Title} />
 
-      <section className="searchbar_Section">
-        <SearchBar />
-      </section>
-
-      <section className="main_Section">
-       <Main 
+      {/* Main Component */}
+      <Main 
+        Location={Location} 
         Temp={Temp} 
-        Desc={Desc}
+        highTemp={highTemp} 
+        lowTemp={lowTemp} 
+        Desc={Desc} 
         Icon={Icon} 
       />
-      </section>
 
-      <section className="footer_Section">
-        <Footer 
-          minTemp={minTemp} 
-          maxTemp={maxTemp} 
-          FeelsLike={FeelsLike} 
-          Humidity={Humidity} 
-          DewPoint={DewPoint} 
-          WindSpeed={WindSpeed} 
-          WindGusts={WindGusts} 
-        />
-      </section>
+      {/* Footer Component */}
+      <Footer 
+        FeelsLike={FeelsLike}
+        UV={UV}
+        Humidity={Humidity}
+        DewPoint={DewPoint}
+        Wind={Wind}
+        Gusts={Gusts}
+        AirQuality={AirQuality}
+        Visibility={Visibility}
+        Sunrise={Sunrise}
+        Sunset={Sunset}
+        Developer={Developer}
+      />
     </div>
   );
 }

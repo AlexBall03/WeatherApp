@@ -1,0 +1,38 @@
+.Searchbar {
+    padding-top: 15px;
+}
+.Searchbar .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.Searchbar input {
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid var(--Text-clr);
+    background: transparent;
+    font-size: 0.9em;
+    color: var(--Text-clr);
+}
+::placeholder {
+    color: var(--Text-clr);
+}
+.Searchbar button {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid var(--Text-clr);
+    font-size: 0.9em;
+    color: var(--Text-clr);
+    padding: 2px 5px 2px 5px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+.Searchbar button:hover {
+    background-color: var(--Text-clr);
+    border-color: var(--Background-clr);
+    color: black;
+    font-weight: bold;
+}

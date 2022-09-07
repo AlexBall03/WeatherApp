@@ -1,6 +1,10 @@
 /* App */
 .App {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100vh;
 }
 
 
@@ -13,7 +17,7 @@ body {
     background-color: var(--Bg-Overlay-clr);
     background-blend-mode: overlay;
     height: 100vh;
-    color: var(--text-clr);
+    color: var(--Text-clr);
 }
 
 
