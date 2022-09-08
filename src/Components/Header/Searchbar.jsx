@@ -1,10 +1,15 @@
 import "./Searchbar.css";
 
-function Searchbar() {
+function Searchbar({ searchLocation, location, setLocation }) {
     return (
-        <form className="Searchbar">
+        <form onSubmit={searchLocation} className="Searchbar">
             <div className="container">
-                <input type="text" name="searchbar" placeholder="Type city name here..." />
+                <input 
+                    value={location}
+                    onChange={e => setLocation(e.target.value)}
+                    type="text" 
+                    name="searchbar" 
+                    placeholder="Type city name here..." />
                 <button type="submit">Search</button>
             </div>
         </form>
